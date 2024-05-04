@@ -1,3 +1,4 @@
+//The metacharacters supported by this regex API are: <([{\^-=$!|]})?*+.>
 import java.io.Console;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
