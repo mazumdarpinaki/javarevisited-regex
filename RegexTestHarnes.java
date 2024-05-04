@@ -1,4 +1,10 @@
-//The metacharacters supported by this regex API are: <([{\^-=$!|]})?*+.>
+/**The metacharacters supported by this regex API are: <([{\^-=$!|]})?*+.>
+There are two ways to force a metacharacter to be treated as an ordinary character:
+precede the metacharacter with a backslash, or
+enclose it within \Q (which starts the quote) and \E (which ends it).
+When using this technique, the \Q and \E can be placed at any location within the expression, provided that the \Q comes first.
+*/
+
 import java.io.Console;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
